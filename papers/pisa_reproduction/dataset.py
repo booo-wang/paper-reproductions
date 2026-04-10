@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 import random
 from typing import List
@@ -28,7 +30,7 @@ class FusionScene:
 
 
 def sample_random_set(
-    min_n: int = 1,
+    min_n: int = 0,
     max_n: int = 16,
     dim: int = 6,
     generator: torch.Generator | None = None,
